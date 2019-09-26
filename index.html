@@ -6,10 +6,10 @@
 <body bgcolor="c9e9f6">
 <h1>A page about a browser game I really like</h1>
 
-<p>Choose what gender you indentify the most with:
+<p>Choose what gender you indentify the most with: 
     <form>
         <select id="gender" onchange="charaname()">
-                <option value="Gran">Male</option>
+                <option value="Gran">Male</option> 
                 <option value="Djeeta">Female</option>
         </select>
         
@@ -18,7 +18,7 @@
 <script>
     function charaname() {
         var x = document.getElementById("gender").value;
-        document.getElementById("named").innerHTML = "Our main character is named " + x + "."; //Changes the name between Gran and Djeeta depending on selected gender
+        document.getElementById("named").innerHTML = "Our main character is named " + x + "."; <!--Changes name depending on the selection of thegender from previous form factor-->
     }
 </script>
 
@@ -26,7 +26,7 @@
 <p>I really enjoy the story, it revolves around the sky. There are continent islands that are floating over clouds and no one knows what lies beneath them.</p>
 
 <p id="named"></p><p>They are followed a little dragon called Vyrn (be careful not to call him a lizard)</p>
-<img src="https://66.media.tumblr.com/8bbac4c1b3e90aa33e3d392dd241e39a/tumblr_p5eae4cnKQ1wpetk0o5_r1_250.gif">
+<img src="images/vyrnapple.gif "> <!--Image found a sub directory-->
 <p>There at a lot of characters that will join you along the way. Since this is a Gacha game</p>
 <p>Do you think hes a dragon or a lizard?</p>
 <form action="/lod.php">
@@ -60,6 +60,6 @@
 <h2>
     Thanks for visiting!
 </h2>
-
+<p>If you want to see my other hobby click <a href="site2.html">here</a>!</p>
 </body>
 </html>
