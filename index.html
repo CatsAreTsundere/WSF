@@ -8,18 +8,20 @@
 
 <p>Choose what gender you indentify the most with: 
     <form>
-        <select id="gender" onchange="charaname()">
+        <select id="gender" onchange="charaname()"> <!--Choosing gender to add some text into the html-->
+                <option selected>Select</option>
                 <option value="Gran">Male</option> 
                 <option value="Djeeta">Female</option>
         </select>
         
     </form>
 </p>
-<script>
+
+<script> 
     function charaname() {
         var x = document.getElementById("gender").value;
-        document.getElementById("named").innerHTML = "Our main character is named " + x + "."; <!--Changes name depending on the selection of thegender from previous form factor-->
-    }
+        document.getElementById("named").innerHTML = "Our main character is named " + x + "."; //Changes name depening on the gender chosen by 
+        } 
 </script>
 
 <p><a href="https://en.wikipedia.org/wiki/Granblue_Fantasy">GranblueFantasy</a> is a really fun game that is heavily inspired by Square Enix</p>
