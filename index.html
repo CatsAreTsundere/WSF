@@ -33,7 +33,7 @@
 <p>Do you think hes a dragon or a lizard?</p>
 
 <form>
-    <select id="lod" onchange="vyrnface()">
+    <select id="lod" onchange="vyrnpic()">
         <option selected>Select</option>
         <option value="lizard">lizard</option>
         <option value="dragon">dragon</option>
@@ -42,13 +42,13 @@
 
 
 <script>
-    function vyrnface(){
+    function vyrnpic(){
     var v = document.getElementById("lod").value;
-    if( v = "lizard" )
+    if( v === "lizard" )
     {
         document.getElementById("vyrn").innerHTML = "He is not a lizard."
     }
-    else if ( v = "dragon" )
+    else if ( v === "dragon" )
     {
         document.getElementById("vyrn").innerHTML = "He is indeed a dragon"
     }
