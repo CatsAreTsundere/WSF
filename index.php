@@ -33,7 +33,7 @@
 <p>Do you think hes a dragon or a lizard?</p>
 
 <form>
-    <select id="lod" onchange="vyrnpic()">
+    <select id="/lod.php" onchange="vyrnpic()">
         <option selected>Select</option>
         <option value="lizard">lizard</option>
         <option value="dragon">dragon</option>
@@ -41,7 +41,7 @@
 </form>
 
 
-<script>
+<!--<script>
     function vyrnpic(){
     var v = document.getElementById("lod").value;
     if( v === "lizard" )
@@ -53,7 +53,7 @@
         document.getElementById("vyrn").innerHTML = "He is indeed a dragon"
     }
     }
-</script>
+</script>-->
 <p id="Vyrn"></p>
 <p><img src="images/Lyria.png" width="240" height="200" style="float: left"><img src="images/Katalina.png" width="240" height="200" style="float: right">  Another very important sidekick is Lyria. A sky blue haired girl. She wears a white dress and has a gold necklace with big gem in the middle. You meet her for the first time running away from Imperial Knights. You try and save her, but after accident (and summoning Bahamut to help you in your fight) you end up Life Linked to her. Meaning your that if either of you die, the other one dies with them. </p>
 <p> You also meet Katalina, Lyria's guard and older sister figure. She explains to you that Lyria was an experiment created to summon "Primal Beings" such as Bahamut to be used during war.</p>
