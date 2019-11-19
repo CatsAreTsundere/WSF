@@ -75,9 +75,14 @@
 <p>The WMTSB trilogy explained alot about character we got in the gacha pool but knew nothing about. And the Primarch we fought. But never got an explaination as to why.</p>
 
 <p>How was my real quick explanation of the game?</p>
+
+
 <form action="/comment.php">
-    <textarea name="message" rows="5" cols="30">insert comment here
-    </textarea>
+    <textarea name="name" rows="1" cols="10"> Insert name/username here
+</textarea>
+    <textarea name="game"   rows="2" cols="10"> What games have you played?
+    <textarea name="message" rows="5" cols="30">Comment here
+</textarea>    
     <br>
     <input type="submit">
 </form>
