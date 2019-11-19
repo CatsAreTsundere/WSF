@@ -80,7 +80,8 @@
 <form action="/comment.php">
     <textarea name="name" rows="1" cols="10"> Insert name/username here
 </textarea>
-    <textarea name="game"   rows="2" cols="10"> What games have you played?
+    <textarea name="game"   rows="2" cols="30"> What games have you played?
+</textarea>
     <textarea name="message" rows="5" cols="30">Comment here
 </textarea>    
     <br>
