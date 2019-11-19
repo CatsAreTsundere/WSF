@@ -55,7 +55,7 @@
     }
 </script>-->
 <p id="Vyrn"></p>
-<p><img src="images/Lyria.png" width="240" height="200" style="float: left"><img src="images/Katalina.png" width="240" height="200" style="float: right">  Another very important sidekick is Lyria. A sky blue haired girl. She wears a white dress and has a gold necklace with big gem in the middle. You meet her for the first time running away from Imperial Knights. You try and save her, but after accident (and summoning Bahamut to help you in your fight) you end up Life Linked to her. Meaning your that if either of you die, the other one dies with them. </p>
+<p><img src="images/LyriaKatalina.png" width="240" height="200" style="float: left" title="Lyria(left) being protected by Katalina(right)">  Another very important sidekick is Lyria. A sky blue haired girl. She wears a white dress and has a gold necklace with big gem in the middle. You meet her for the first time running away from Imperial Knights. You try and save her, but after accident (and summoning Bahamut to help you in your fight) you end up Life Linked to her. Meaning your that if either of you die, the other one dies with them. </p>
 <p> You also meet Katalina, Lyria's guard and older sister figure. She explains to you that Lyria was an experiment created to summon "Primal Beings" such as Bahamut to be used during war.</p>
 <p>As you play, there will be many characters joining your adventures. Either by story or by <a href="https://en.wikipedia.org/wiki/Gacha_game">gacha</a> means(basicly gambling for characters with ingame currency)</p>
 <p>Characters range from big buff cow horned dudes to small elf eared beings. Male or female. Even some Primals that Lyria could summon.</p>
