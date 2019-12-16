@@ -72,7 +72,7 @@
 <p>How was my real quick explanation of the game?</p>
 
 <!-- form factor for adding a comment -->
-<form name="commenting" action="/comment.php" method="get">
+<form name="commenting" action="comment.php" method="POST">
     <br>Username</br>
     <textarea name="name" rows="1" cols="10"></textarea>
     <br>Games you've played</br>

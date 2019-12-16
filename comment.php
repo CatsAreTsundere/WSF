@@ -1,10 +1,12 @@
 <!doctype php>
 <html>
+
 <head>
 <title>Comments</title>
 </head>
 <body bgcolor="c9e9f6">
 <h1>Here are some of your comments</h1>
+<body>
 
 <?php
 $user = ($_GET['name']);
@@ -15,6 +17,9 @@ $user = filter_var($user, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 $game = filter_var($game, FILTER_SANITIZE_STRING);
 $cmmt = filter_var($cmmt, FILTER_SANITZIE_STRING);
 ?>
+
+<div>
+
 <?php
 //db log in info
 $servername = "localhost";
@@ -29,12 +34,19 @@ if(!$conn){
 }
 
 $sql = "SELECT userid, name, game, Comment from comm;";
-$sql_ins ="INSERT INTO comm (name, game, Comment) values ('$user','$game','$cmmt');";
+$sql_ins ="INSERT INTO comm (name, game, Comment) values ('{$user}','{$game}','{$cmmt}');";
 $result = mysqli_query($conn, $sql);
+
+if (mysqli_query($conn, $sql)){
+    echo "Thank you for your comment!";
+}
+else {
+    Echo "That did not get through.. Error: " . $sql . mysqli_error($conn);
+}
 
 if (mysqli_num_rows($result)>0){
     while ($row = mysqli_fetch_assoc($result)){
-        echo "ID:" . $row["userid"] "Name: " .  $row["name"]. "- Game: " . $row["game"] . "- Message" . $row["Comment"]. "<br>";
+        echo "ID:" . $row["userid"] . "Name: " .  $row["name"]. "- Game: " . $row["game"] . "- Message" . $row["Comment"]. "<br>";
     }
     }else {
         echo "0 results";
@@ -43,4 +55,9 @@ if (mysqli_num_rows($result)>0){
 
 mysqli_close($conn);
 ?>
+
+</div>
+
+</body>
+
 </html>
