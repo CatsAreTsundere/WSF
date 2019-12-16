@@ -1,3 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<title>Comments</title>
+</head>
+<body bgcolor="c9e9f6">
+<h1>Here are some of your comments</h1>
+
+<?php
+$user = ($_GET['name']);
+$game = ($_GET['game']);
+$cmmt = ($_GET['message']);
+
+$user = filter_var($user, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+$game = filter_var($game, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+$cmmt = filter_var($cmmt, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+?>
 <?php
 $servername = "localhost";
 $username = "catsu";
