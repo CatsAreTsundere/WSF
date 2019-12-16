@@ -12,8 +12,8 @@ $game = ($_GET['game']);
 $cmmt = ($_GET['message']);
 
 $user = filter_var($user, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-$game = filter_var($game, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-$cmmt = filter_var($cmmt, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+$game = filter_var($game, FILTER_SANITIZE_STRING);
+$cmmt = filter_var($cmmt, FILTER_SANITZIE_STRING);
 ?>
 <?php
 $servername = "localhost";
@@ -27,7 +27,8 @@ if(!$conn){
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "SELECT userid, name, game, comment from comm";
+$sql = "SELECT userid, name, game, Comment from comm;";
+$sql_ins ="INSERT INTO comm (name, game, Comment) values ('$user','$game','$cmmt');";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($resul)>0){
