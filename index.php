@@ -77,13 +77,13 @@
 <p>How was my real quick explanation of the game?</p>
 
 
-<form action="/comment.php">
-    <textarea name="name" rows="1" cols="10"> Insert name/username here
-</textarea>
-    <textarea name="game"   rows="2" cols="30"> What games have you played?
-</textarea>
-    <textarea name="message" rows="5" cols="30">Comment here
-</textarea>    
+<form name=commenting action="/comment.php" method="get">
+    <br>Username</br>
+    <textarea name="name" rows="1" cols="10"></textarea>
+    <br>Games you've played</br>
+    <textarea name="game"   rows="2" cols="30"></textarea>
+    <br>Comment</br>
+    <textarea name="message" rows="5" cols="30"></textarea>    
     <br>
     <input type="submit">
 </form>
