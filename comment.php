@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype php>
 <html>
 <head>
 <title>Comments</title>
