@@ -6,7 +6,6 @@
 </head>
 <body bgcolor="c9e9f6">
 <h1>Here are some of your comments</h1>
-<body>
 
 <?php
 $user = ($_GET['name']);

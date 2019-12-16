@@ -32,7 +32,7 @@
 <img src="images/vyrnapple.gif "> <!--Image brough up through a sub directory-->
 <p>Do you think hes a dragon or a lizard?</p>
 
-<button type="button" onclick="alert('HE IS NOT A LIZARD!!!">Lizard</button><button type="button" onclick="alert('He is most definetly a fully fledge dragon')">Dragon</button>
+<button type="button" onclick="alert('HE IS NOT A LIZARD!!!">Lizard</button><button type="button" onclick="alert('He is most definitely a fully fledge dragon')">Dragon</button>
 
 
 
