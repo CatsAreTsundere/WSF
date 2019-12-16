@@ -22,7 +22,7 @@ $username = "catsu";
 $password = "Elisanne009";
 $dbname = "commtbl";
 
-$conn mysqli_connect($servename, $username, $password, $dbname);
+$conn = mysqli_connect($servename, $username, $password, $dbname);
 //connection check
 if(!$conn){
     die("Connection failed: " . mysqli_connect_error());
@@ -32,9 +32,9 @@ $sql = "SELECT userid, name, game, Comment from comm;";
 $sql_ins ="INSERT INTO comm (name, game, Comment) values ('$user','$game','$cmmt');";
 $result = mysqli_query($conn, $sql);
 
-if (mysqli_num_rows($resul)>0){
+if (mysqli_num_rows($result)>0){
     while ($row = mysqli_fetch_assoc($result)){
-        echo "Name: " .  $row["name"]. "- Game: " . $row["game"] . "- Message" . $row["Comment"]. "<br>";
+        echo "ID:" . $row["userid"] "Name: " .  $row["name"]. "- Game: " . $row["game"] . "- Message" . $row["Comment"]. "<br>";
     }
     }else {
         echo "0 results";
