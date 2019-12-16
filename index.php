@@ -18,7 +18,7 @@
 </p>
 <p><a href="https://en.wikipedia.org/wiki/Granblue_Fantasy">GranblueFantasy</a> is a really fun game that is heavily inspired by Square Enix</p>
 <p>I really enjoy the story, it revolves around the sky. There are continent islands that are floating over clouds and no one knows what lies beneath them.</p>
-
+<!-- simple script to change name depending on the selected gender -->
 <script> 
     function charaname() {
         var x = document.getElementById("gender").value;
@@ -32,13 +32,8 @@
 <img src="images/vyrnapple.gif "> <!--Image brough up through a sub directory-->
 <p>Do you think hes a dragon or a lizard?</p>
 
-<form>
-    <select id="/lod.php" onchange="vyrnpic()">
-        <option selected>Select</option>
-        <option value="lizard">lizard</option>
-        <option value="dragon">dragon</option>
-    </select>
-</form>
+<button type="button" onclick="alert('HE IS NOT A LIZARD!!!">Lizard</button><button type="button" onclick="alert('He is most definetly a fully fledge dragon')">Dragon</button>
+
 
 
 <!--<script>
@@ -76,8 +71,8 @@
 
 <p>How was my real quick explanation of the game?</p>
 
-
-<form name=commenting action="/comment.php" method="get">
+<!-- form factor for adding a comment -->
+<form name="commenting" action="/comment.php" method="get">
     <br>Username</br>
     <textarea name="name" rows="1" cols="10"></textarea>
     <br>Games you've played</br>

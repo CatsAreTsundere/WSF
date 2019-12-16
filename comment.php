@@ -16,13 +16,14 @@ $game = filter_var($game, FILTER_SANITIZE_STRING);
 $cmmt = filter_var($cmmt, FILTER_SANITZIE_STRING);
 ?>
 <?php
+//db log in info
 $servername = "localhost";
 $username = "catsu";
 $password = "Elisanne009";
 $dbname = "commtbl";
 
 $conn mysqli_connect($servename, $username, $password, $dbname);
-
+//connection check
 if(!$conn){
     die("Connection failed: " . mysqli_connect_error());
 }
@@ -42,3 +43,4 @@ if (mysqli_num_rows($resul)>0){
 
 mysqli_close($conn);
 ?>
+</html>
