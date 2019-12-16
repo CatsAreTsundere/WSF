@@ -18,7 +18,7 @@ $cmmt = filter_var($cmmt, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 <?php
 $servername = "localhost";
 $username = "catsu";
-$password = "Elisanne";
+$password = "Elisanne009";
 $dbname = "commtbl";
 
 $conn mysqli_connect($servename, $username, $password, $dbname);
