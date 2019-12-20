@@ -1,7 +1,12 @@
 <!doctype php>
 <html>
+
+
+
 <head>
-<title>Granblue Fantasy</title>
+    <script src="empty.js"></script>
+
+    <title>Granblue Fantasy</title>
 </head>
 <body bgcolor="c9e9f6">
 <h1>A page about a browser game I really like</h1>
@@ -18,7 +23,7 @@
 </p>
 <p><a href="https://en.wikipedia.org/wiki/Granblue_Fantasy">GranblueFantasy</a> is a really fun game that is heavily inspired by Square Enix</p>
 <p>I really enjoy the story, it revolves around the sky. There are continent islands that are floating over clouds and no one knows what lies beneath them.</p>
-<!-- simple script to change name depending on the selected gender -->
+<!-- simple script to change name dsrc="empty.js"epending on the selected gender -->
 <script> 
     function charaname() {
         var x = document.getElementById("gender").value;
@@ -32,7 +37,7 @@
 <img src="images/vyrnapple.gif "> <!--Image brough up through a sub directory-->
 <p>Do you think hes a dragon or a lizard?</p>
 
-<button type="button" onclick="alert('HE IS NOT A LIZARD!!!">Lizard</button><button type="button" onclick="alert('He is most definitely a fully fledge dragon')">Dragon</button>
+<button type="button" onclick="alert('HE IS NOT A LIZARD!!!')">Lizard</button><button type="button" onclick="alert('He is most definitely a fully fledge dragon')">Dragon</button>
 
 
 
@@ -44,7 +49,7 @@
         document.getElementById("vyrn").innerHTML = "He is not a lizard."
     }
     else if ( v === "dragon" )
-    {
+    {src="empty.js"
         document.getElementById("vyrn").innerHTML = "He is indeed a dragon"
     }
     }
@@ -72,15 +77,15 @@
 <p>How was my real quick explanation of the game?</p>
 
 <!-- form factor for adding a comment -->
-<form name="commenting" action="comment.php" method="POST">
-    <br>Username</br>
-    <textarea name="name" rows="1" cols="10"></textarea>
-    <br>Games you've played</br>
+<form name="commenting" onsubmit="return checkEmpty();" action="/comment.php" method="get">
+    <br>Username:</br>
+    <textarea name="user" rows="1" cols="10"></textarea>
+    <br>Games you've played:</br>
     <textarea name="game"   rows="2" cols="30"></textarea>
-    <br>Comment</br>
+    <br>Comment:</br>
     <textarea name="message" rows="5" cols="30"></textarea>    
     <br>
-    <input type="submit">
+    <input type="submit" name="submit" value="Submit">
 </form>
 
 <h2>
